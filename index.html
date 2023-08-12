@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Crossover and Mutation of Region-Level Facial Genes for Kinship Face Synthesis">
+  <meta name="keywords" content="LoTE-Animal, Kinship, Face">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LoTE-Animal: A Long Time-span Dataset for Endangered Animal Behavior Understanding</title>
+
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">LoTE-Animal: A Long Time-span Dataset for Endangered Animal Behavior Understanding
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://github.com/wmpscc">Dan Liu</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="">Jin Hou</a><sup>2*</sup>,</span>
+            <span class="author-block">
+              <a href="">Shaoli Huang</a><sup>3*</sup>,</span>
+            <span class="author-block">
+              <a href="">Jing Liu </a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="">Yuxin He</a><sup>4</sup>,</span>
+            <span class="author-block">
+              <a href="">Bochuan Zheng<sup>5</sup></a>,</span>
+            <span class="author-block">
+              <a href="">Jifeng Ning</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="">Jindong Zhang</a><sup>5+</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Northwest A&F University, </span>
+            <span class="author-block"><sup>2</sup>Beijing Normal University, </span>
+            <span class="author-block"><sup>3</sup>Tencent AI-Lab, </span>
+            <span class="author-block"><sup>4</sup>North Sichuan Medical College, </span>            
+            <span class="author-block"><sup>5</sup>China West Normal University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=".html"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://youtu.be/TDqGaL79_pg"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://drive.google.com/file/d/1_oh0mnC3pujI0dt9__6GSHq9FjB-yRg4/view?usp=sharing"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/year.png" style="width: 100%; max-height: auto;">
+      <h2 class="subtitle has-text-centered">
+        Collected from 2009 to 2021 over 12 years, with thousands of camera days. These images capture elusive wildlife, unveiling unique behaviors and appearances, offering invaluable scientific research opportunities.
+      </h2>
+    </div>
+
+    <div class="hero-body">
+      <img src="./static/images/camera.png" style="width: 100%; max-height: auto;">
+      <h2 class="subtitle has-text-centered">
+      Infrared-triggered camera traps at multiple sites.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Understanding and analyzing animal behavior is increasingly essential to protect endangered animal species. However, the application of advanced computer vision techniques in this regard is minimal, which boils down to lacking large and diverse datasets for training deep models. 
+          </p>
+          <p>
+            To break the deadlock, we present LoTE-Animal, a large-scale endangered animal dataset collected over 12 years, to foster the application of deep learning in rare species conservation. The collected data contains vast variations such as ecological seasons, weather conditions, periods, viewpoints, and habitat scenes. So far, we retrieved at least 500K videos and 1.2 million images. Specifically, we selected and annotated 11 endangered animals for behavior understanding, including 10K video sequences for the action recognition task, 28K images for object detection, instance segmentation, and pose estimation tasks. In addition, we gathered 7K web images of the same species as source domain data for the domain adaptation task. 
+          </p>
+          <p>
+            We provide evaluation results of representative vision understanding approaches and cross-domain experiments. LoTE-Animal dataset would facilitate the community to research more advanced machine learning models and explore new tasks to aid endangered animal conservation. Our dataset will be released with the paper.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- LoTE-Animal Dadaset. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">LoTE-Animal Dadaset</h2>
+        <p>We followed the COCO standards and annotated multiple tasks including object detection, instance segmentation, pose estimation, and action recognition.</p><br>
+        <h3 class="title is-4">image dataset</h3>
+        <span class="author-block">
+          <p>Download dataset by
+            <a href="https://drive.google.com/file/d/1_oh0mnC3pujI0dt9__6GSHq9FjB-yRg4/view?usp=sharing">wild dataset </a>|
+            <a href="https://drive.google.com/file/d/1_oh0mnC3pujI0dt9__6GSHq9FjB-yRg4/view?usp=sharing">web dataset</a>.
+          </p><br>
+        </span>
+        <img src="./static/images/wild.png" style="width: 100%; max-height: auto;">
+        <h2 class="subtitle has-text-centered">
+          The columns are: Tufted Deer, Chinese Serow, Tibetan Macaque, Giant Panda, Blue Sheep, Red Panda, Golden Snub-nosed Monkey, Sambar, Wild Boar, Porcupine, Yellow-throated Marte.
+        </h2>
+        <br>
+        <h3 class="title is-4">video dataset</h3>
+        <span class="author-block">
+          <p>Download dataset by
+            <a href="https://drive.google.com/file/d/1_oh0mnC3pujI0dt9__6GSHq9FjB-yRg4/view?usp=sharing">action dataset</a>.
+          </p>
+        </span>
+        <div class="hero-body">
+          <div class="container">
+            <div id="results-carousel" class="carousel results-carousel">
+              <div class="item item-steve">
+                <video poster="" id="steve" autoplay controls muted loop playsinline width="320" height="240">
+                  <source src="./static/videos/Exploratory.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-chair-tp">
+                <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/Defecating.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-shiba">
+                <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/Urinating.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-fullbody">
+                <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/Mounting.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-blueshirt">
+                <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/Trotting.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-mask">
+                <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/Grooming.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-coffee">
+                <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/CircumanalGlandSigning.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="item item-toby">
+                <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/Playing.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="title is-4">unlabeled dataset</h3>
+        <span class="author-block">
+          <p>Download dataset by
+            <a href="https://drive.google.com/file/d/1_oh0mnC3pujI0dt9__6GSHq9FjB-yRg4/view?usp=sharing">unlabeled dataset</a>.
+          </p><br>
+        </span>
+      </div>
+    </div>
+</section>
+
+
+
+<!-- <section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline width="320" height="240">
+            <source src="./static/videos/AiluropodaMelanoleuca.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/CircumanalGlandSigning.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/DrinkWater.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/Exploratory.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/Mounting.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/Playing.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/Urinating.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-toby">
+          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/Exploratory.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@InProceedings{Liu_2023_ICCV,
+      author    = {Li, Dan and Hou, Jin and Huang, Shaoli and Liu, Jing and He, Yuxin and Zheng, Bochuan and Ning, Jingfeng and Zhang, Jindong},
+      title     = {LoTE-Animal: A Long Time-span Dataset for Endangered Animal Behavior Understanding},
+      booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+      month     = {June},
+      year      = {2023},
+      pages     = {00000-00000}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://openaccess.thecvf.com/content/CVPR2023/papers/Li_StyleGene_Crossover_and_Mutation_of_Region-Level_Facial_Genes_for_Kinship_CVPR_2023_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/wmpscc" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is adapted from <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
